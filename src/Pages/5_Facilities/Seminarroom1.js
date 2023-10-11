@@ -1,5 +1,5 @@
 import React from 'react';
-import seminarRoom1Image from '../Pics/2O9A9659.jpg';
+import seminarRoom1Image from './../../img/Seminarroom1_1.jpg';
 
 
 const Seminarroom1 = () => {
