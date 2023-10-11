@@ -212,7 +212,7 @@ const Navbarmenu = () => {
                   </Link>
                   <ul className={`sub__menus ${activeSubMenu === 2 ? 'sub__menus__Active' : ''}`}>
                     <li>
-                      <NavLink onClick={toggleClass} activeClassName="is-active" to="/Offline">
+                      <NavLink onClick={toggleClass} activeClassName="is-active" to="/Teal1">
                         Support and Development Center
                       </NavLink>
                     </li>
@@ -229,7 +229,7 @@ const Navbarmenu = () => {
                   </Link>
                   <ul className={`sub__menus ${activeSubMenu === 3 ? 'sub__menus__Active' : ''}`}>
                     {/* Add submenu items for Facilities here */}
-                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/`}> Seminar Room 1 </NavLink> </li>
+                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Seminarroom1`}> Seminar Room 1 </NavLink> </li>
                     <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/`}> Seminar Room 2</NavLink> </li>
                     <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/`}> Seminar Room 3</NavLink> </li>
                     <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/`}> A/V Studio </NavLink> </li>
