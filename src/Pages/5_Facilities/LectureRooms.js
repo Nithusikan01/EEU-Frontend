@@ -1,5 +1,5 @@
 import React from 'react';
-import lectureRoomsImage from './../../img/Seminarroom1_1.jpg';
+import lectureRoomsImage from './../../img/Seminarroom1_1.JPG';
 
 const LectureRooms = () => {
 
@@ -11,6 +11,7 @@ const LectureRooms = () => {
         maxWidth: '800px', // Limit the card width for smaller screens
         boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
         backgroundColor: '#f0f0f0', // Set the background color here
+        lineHeight: 1.5, // Add line spacing of 1.5
     };
     const headingStyle = {
         color: '#07a8ff',

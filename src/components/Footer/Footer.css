@@ -122,7 +122,7 @@ hr{
 
 
 .footer {
-    background-color: #2d2d32;
+    background-color: /*#2d2d32*/#4485a1;
     padding: 2em;
     color: white; /* Added text color to make text visible on the dark background */
     font-family: sans-serif;

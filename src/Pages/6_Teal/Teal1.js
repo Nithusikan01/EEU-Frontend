@@ -11,6 +11,8 @@ const Teal1 = () => {
         maxWidth: '800px', // Limit the card width for smaller screens
         boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
         backgroundColor: '#f0f0f0', // Set the background color here
+        lineHeight: 1.5, // Add line spacing of 1.5
+        
     };
   return (
     <div className = 'Main' style = {cardStyle}>

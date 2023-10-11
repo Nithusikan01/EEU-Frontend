@@ -15,6 +15,9 @@ import AVRecordingRoom from "./../../Pages/5_Facilities/AVRecordingRoom"
 import ConferenceRoom from "./../../Pages/5_Facilities/ConferenceRoom"
 import LectureRooms from '../../Pages/5_Facilities/LectureRooms';
 import PublicAddressingSystem from "../../Pages/5_Facilities/PublicAddressingSystem"
+import GES from '../../Pages/4_GES/User/GES';
+import HomeUser from '../../Pages/1_Home/HomeUser';
+import ContactUs from '../../Pages/16_Help/Contact_us';
 
 
 
@@ -38,6 +41,9 @@ const RoutesConfig = () => {
       <Route path="/ConferenceRoom" element={<ConferenceRoom/>} />
       <Route path="/LectureRooms" element={<LectureRooms/>} />
       <Route path="/PublicAddressingSystem" element={<PublicAddressingSystem/>} />
+      <Route path="/GES" element={<GES/>} />
+      <Route path="/HomeUser" element={<HomeUser/>} />
+      <Route path="/ContactUs" element={<ContactUs/>} />
       
     </Routes>
   );

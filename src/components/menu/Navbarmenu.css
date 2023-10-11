@@ -163,10 +163,11 @@ li {
   margin: 7px 27px;
 }
 .menu-item:hover > a{
-  color: blue !important;
+  color: rgb(246, 230, 4) !important;
+  border: rgb(246, 230, 4);
 }
 .menu-item .sub__menus li:hover a{
-  color: blue !important;
+  color: rgb(246, 230, 4);
 }
 
 /*.header__middle__logo img{

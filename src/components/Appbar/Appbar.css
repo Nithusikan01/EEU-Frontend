@@ -59,6 +59,7 @@
     flex: 3; /* Set flex to 3 to occupy 80% of the screen */
     font-size: 400px;
     margin-left: -110px;
+    line-height: 1.5;
   }
   
   /* Responsive Font Size */

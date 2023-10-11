@@ -180,7 +180,7 @@ const Navbarmenu = () => {
 
               <ul className={`main-menu menu-right ${isMenu ? 'menuq2' : ''}`}>
                 <li className="menu-item">
-                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/">
+                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/HomeUser">
                     Home
                   </NavLink>
                 </li>
@@ -202,7 +202,7 @@ const Navbarmenu = () => {
                   </ul>
                 </li>
                 <li className="menu-item">
-                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/">
+                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/GES">
                     General Elective Subjects
                   </NavLink>
                 </li>
@@ -246,7 +246,7 @@ const Navbarmenu = () => {
                   </NavLink>
                 </li>
                 <li className="menu-item">
-                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/">
+                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/ContactUs">
                     Help
                   </NavLink>
                 </li>
