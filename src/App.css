@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
-}
+/* Add this CSS to your App.css or a separate stylesheet */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Make the Appbar and Navbarmenu fixed at the top */
+.Appbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensure the Appbar is above other content */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .Navbarmenu {
+    position: fixed;
+    top: 90px; /* Adjust this value to leave space for the Appbar */
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensure the Navbarmenu is above other content */
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Set padding for the content below the fixed elements */
+  main {
+    padding-top: 140px; /* Adjust this value to leave space for both fixed elements */
+  }
+  /* Automatically align Navbarmenu with the bottom of Appbar */
+
+  /* Media query for mobile devices */
+@media (max-width: 576px) {
+  .Appbar,
+  .Navbarmenu {
+    /*position: static; /* Change position to static for mobile view */
+    /*top: 70px;*/
+    padding: 0; /* Remove padding */
+  }
+
+  main {
+    padding-top: 140px; /* Remove padding for mobile view */
   }
 }
