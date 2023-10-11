@@ -217,7 +217,7 @@ const Navbarmenu = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink onClick={toggleClass} activeClassName="is-active" to="/Offline">
+                      <NavLink onClick={toggleClass} activeClassName="is-active" to="/Teal2">
                         TEAL 2.0 Seminar Series
                       </NavLink>
                     </li>
@@ -230,13 +230,13 @@ const Navbarmenu = () => {
                   <ul className={`sub__menus ${activeSubMenu === 3 ? 'sub__menus__Active' : ''}`}>
                     {/* Add submenu items for Facilities here */}
                     <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Seminarroom1`}> Seminar Room 1 </NavLink> </li>
-                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/`}> Seminar Room 2</NavLink> </li>
-                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/`}> Seminar Room 3</NavLink> </li>
-                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/`}> A/V Studio </NavLink> </li>
+                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Seminarroom2`}> Seminar Room 2</NavLink> </li>
+                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Seminarroom3`}> Seminar Room 3</NavLink> </li>
+                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/AVRecordingRoom`}> A/V Studio </NavLink> </li>
                     <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/`}>EOE Perera Theater</NavLink> </li>
-                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/`}> Conference Room </NavLink> </li>
-                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/`}> Lecture Rooms</NavLink> </li>
-                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Public Addressing System </NavLink> </li>
+                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/ConferenceRoom`}> Conference Room </NavLink> </li>
+                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/LectureRooms`}> Lecture Rooms</NavLink> </li>
+                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/PublicAddressingSystem`}> Public Addressing System </NavLink> </li>
                     <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`https://eeu.skedda.com/booking`}> Booking System </NavLink> </li>
             </ul>
                 </li>
