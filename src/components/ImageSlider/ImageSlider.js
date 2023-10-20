@@ -1,60 +1,37 @@
-import React from "react";
-import 'react-slideshow-image/dist/styles.css';
-import { Fade } from "react-slideshow-image";
-import first from '../images/efac.jpg' 
-import second from '../images/uop.jpg'
-import third from '../images/peradeniya-engineering-faculty-most-beautiful-university-south-asia-105838063.webp'
-const slideImages = [
-    {
-        url: first,
-        caption: "First Slide"
-    },
-    {
-        url: second, 
-        caption: "Second Slide"
-    },
-    {
-        url: third,
-        caption: "Third Slide"
-    },
-    {
-        url: second,
-        caption: "Fourth Slide"
-    },
-    {
-        url: third,
-        caption: "Fifth Slide"
-    },
-];
+/*import React from 'react';
+import ScrollCarousel from 'scroll-carousel-react';
+import image1 from '../../img/Home1.jpg';
+import image2 from '../../img/Home2.jpg';
+import image3 from '../../img/Home4.jpg';
+import image4 from '../../img/Home5.jpg';
+// Import other images as needed
+const MyComponent = () => {
+    const images = [image1, image2,image3,]; // Add other image variables as needed
 
-const divStyles = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center", // Corrected the typo here
-    height: "600px",
-    backgroundSize: "cover"
-}
-
-const spanStyle = {
-    fontSize: "50px", // Corrected the typo here
-    color: "rgba(255,255,255,0.7)"
-
-}
-
-function ImageSlider() {
+    const imageStyles = {
+        width: '800px', // Set the desired width
+        height: '600px', // Set the desired height
+      };
     return (
-        <div className="slide-container">
-            <Fade>
-                {slideImages.map((image, index) => (
-                    <div key={index}>
-                        <div style={{ ...divStyles, backgroundImage: `url(${image.url})` }}>
-                            <span style={spanStyle}>{image.caption}</span>
-                        </div>
-                    </div>
-                ))}
-            </Fade>
-        </div>
+      <>
+       <h1>WELCOME !!!</h1>
+       
+        <ScrollCarousel
+          autoplay
+          autoplaySpeed={8}
+          speed={5}
+          onReady={() => console.log('I am ready')}
+        >
+          {images.map((image, index) => (
+            <div key={index} className='bg-blue-300/20 border-2 border-blue-300/70 rounded h-36 w-48' style={{ maxWidth: '70%' }}>
+              <img src={image} alt={`Image ${index}`} style={imageStyles} />
+            </div>
+          ))}
+        </ScrollCarousel>
+      </>
     );
-}
+  };
+export default MyComponent ;*/
 
-export default ImageSlider;
+
+

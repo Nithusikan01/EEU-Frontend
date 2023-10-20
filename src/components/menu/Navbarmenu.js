@@ -132,6 +132,11 @@ import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { FiAlignRight, FiXCircle } from 'react-icons/fi';
 import './Navbarmenu.css';
+import UOP_LOGO from "../../img/logo.png";
+
+import SearchBar from "../Search/Searchbar";
+import SearchData from "../Search/Searchbar.json";
+
 
 const Navbarmenu = () => {
   const [isMenu, setisMenu] = useState(false);
@@ -168,19 +173,9 @@ const Navbarmenu = () => {
                         <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
                     </>}
 
-              {/*isResponsiveclose === true ? (
-                <span className="menubar__button" onClick={toggleClass}>
-                  <FiXCircle />
-                </span>
-              ) : (
-                <span className="menubar__button" onClick={toggleClass}>
-                  <FiAlignRight />
-                </span>
-              )*/}
-
               <ul className={`main-menu menu-right ${isMenu ? 'menuq2' : ''}`}>
                 <li className="menu-item">
-                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/HomeUser">
+                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/">
                     Home
                   </NavLink>
                 </li>
@@ -190,12 +185,12 @@ const Navbarmenu = () => {
                   </Link>
                   <ul className={`sub__menus ${activeSubMenu === 1 ? 'sub__menus__Active' : ''}`}>
                     <li>
-                      <NavLink onClick={toggleClass} activeClassName="is-active" to="/Online">
+                      <NavLink onClick={toggleClass} activeClassName="is-active" to="/PresentStaffNew">
                         Present Staff
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink onClick={toggleClass} activeClassName="is-active" to="/Offline">
+                      <NavLink onClick={toggleClass} activeClassName="is-active" to="/PastStaffNew">
                         Past Staff
                       </NavLink>
                     </li>
@@ -228,17 +223,17 @@ const Navbarmenu = () => {
                     Facilities {/*<FiChevronDown />*/}
                   </Link>
                   <ul className={`sub__menus ${activeSubMenu === 3 ? 'sub__menus__Active' : ''}`}>
-                    {/* Add submenu items for Facilities here */}
-                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Seminarroom1`}> Seminar Room 1 </NavLink> </li>
-                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Seminarroom2`}> Seminar Room 2</NavLink> </li>
-                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Seminarroom3`}> Seminar Room 3</NavLink> </li>
-                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/AVRecordingRoom`}> A/V Studio </NavLink> </li>
-                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/`}>EOE Perera Theater</NavLink> </li>
-                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/ConferenceRoom`}> Conference Room </NavLink> </li>
-                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/LectureRooms`}> Lecture Rooms</NavLink> </li>
-                    <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/PublicAddressingSystem`}> Public Addressing System </NavLink> </li>
-                    <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`https://eeu.skedda.com/booking`}> Booking System </NavLink> </li>
-            </ul>
+                        {/* Add submenu items for Facilities here */}
+                        <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Seminarroom1`}> Seminar Room 1 </NavLink> </li>
+                        <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Seminarroom2`}> Seminar Room 2</NavLink> </li>
+                        <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Seminarroom3`}> Seminar Room 3</NavLink> </li>
+                        <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/AVRecordingRoom`}> A/V Studio </NavLink> </li>
+                        <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/VideoPlayer`}>EOE Perera Theater</NavLink> </li>
+                        <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/ConferenceRoom`}> Conference Room </NavLink> </li>
+                        <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/LectureRooms`}> Lecture Rooms</NavLink> </li>
+                        <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/PublicAddressingSystem`}> Public Addressing System </NavLink> </li>
+                        <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`https://eeu.skedda.com/booking`}> Booking System </NavLink> </li>
+                </ul>
                 </li>
                 <li className="menu-item">
                   <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/Development">
@@ -251,13 +246,12 @@ const Navbarmenu = () => {
                   </NavLink>
                 </li>
                 <li className="menu-item">
-                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/">
+                  <NavLink exact activeClassName="is-active" onClick={toggleClass} to="/Login">
                     LogIn
                   </NavLink>
                 </li>
-                <li className="search-bar">
-                  <input type="text" placeholder="Type to search" />
-                  <button>Search</button>
+                <li className="menu-item">
+                  <SearchBar placeholder="Search.." data={SearchData}/>
                 </li>
                 
               </ul>

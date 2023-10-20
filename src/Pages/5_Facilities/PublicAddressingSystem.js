@@ -1,5 +1,8 @@
 import React from 'react';
-import paSystemImage from './../../img/Seminarroom1_1.JPG';
+import paSystemImage1 from './../../img/PublicAddressing_1.JPG';
+import paSystemImage2 from './../../img/PublicAddressing_2.JPG';
+import paSystemImage3 from './../../img/PublicAddressing_3.JPG';
+import paSystemImage4 from './../../img/PublicAddressing_4.JPG';
 
 const PublicAddressingSystem = () => {
 
@@ -40,7 +43,7 @@ const PublicAddressingSystem = () => {
       <h2 style={{ ...headingStyle, textAlign: 'center' }}>Public Addressing System</h2>
       <div style={imageContainerStyle}>
         {/* Add the image below the heading */}
-        <img src={paSystemImage} alt="Public Addressing System" style={imageStyle} />
+        <img src={paSystemImage2} alt="Public Addressing System" style={imageStyle} />
       </div>
       <h3 style={headingStyle}>Description</h3>
       <p>
@@ -52,12 +55,12 @@ const PublicAddressingSystem = () => {
         Additionally, a new amplifier was installed in 2017 to cater to the increasing demand for extensions.
       </p>
       <div style={rowStyle}>
-            <img src={paSystemImage} alt="Image 1" style={imageStyle} />
-            <img src={paSystemImage} alt="Image 2" style={imageStyle} />
+            <img src={paSystemImage1} alt="Image 1" style={imageStyle} />
+            <img src={paSystemImage2} alt="Image 2" style={imageStyle} />
         </div>
         <div style={rowStyle}>
-            <img src={paSystemImage} alt="Image 3" style={imageStyle} />
-            <img src={paSystemImage} alt="Image 4" style={imageStyle} />
+            <img src={paSystemImage3} alt="Image 3" style={imageStyle} />
+            <img src={paSystemImage4} alt="Image 4" style={imageStyle} />
         </div>
     </div>
   );

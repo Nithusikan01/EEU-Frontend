@@ -18,6 +18,23 @@ import PublicAddressingSystem from "../../Pages/5_Facilities/PublicAddressingSys
 import GES from '../../Pages/4_GES/User/GES';
 import HomeUser from '../../Pages/1_Home/HomeUser';
 import ContactUs from '../../Pages/16_Help/Contact_us';
+import GESAdmin from '../../Pages/4_GES/Admin/GesAdmin'
+import VideoPlayer from '../../Pages/5_Facilities/Eoe';
+import HomeAdmin from '../../Pages/1_Home/HomeAdmin';
+import PastStaffNew from '../../Pages/3_Staff/pastStaffNew';
+import PresentStaffNew from '../../Pages/3_Staff/presentStaffNew';
+import PastStaffCRUD from '../../Pages/3_Staff/Past Staff CRUD/PastStaffCrud';
+import PresentStaffCRUD from './../../Pages/3_Staff/Present Staff CRUD/PresentStaffCrud';
+import PastStaffEdit from "../../Pages/3_Staff/Past Staff CRUD/PastStaffEdit";
+import PresentStaffEdit from './../../Pages/3_Staff/Present Staff CRUD/PresentStaffEdit';
+import PresentStaffAdd from '../../Pages/3_Staff/Present Staff CRUD/presentStaffAdd';
+import PastStaffAdd from '../../Pages/3_Staff/Past Staff CRUD/pastStaffAdd';
+import Login from './../../Pages/Login/Login';
+import RegistrationForm from '../../Pages/Login/Register';
+import LogoutButton from '../../Pages/Login/Logout';
+import LandingPage from '../../Pages/15_Landing_Page/LandingPage';
+
+
 
 
 
@@ -26,7 +43,7 @@ import ContactUs from '../../Pages/16_Help/Contact_us';
 const RoutesConfig = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<HomeUser/>} />
       <Route path="/About" element={<About />} />
       <Route path="/Online" element={<Online />} />
       <Route path="/Offline" element={<Offline />} />
@@ -42,9 +59,28 @@ const RoutesConfig = () => {
       <Route path="/LectureRooms" element={<LectureRooms/>} />
       <Route path="/PublicAddressingSystem" element={<PublicAddressingSystem/>} />
       <Route path="/GES" element={<GES/>} />
-      <Route path="/HomeUser" element={<HomeUser/>} />
       <Route path="/ContactUs" element={<ContactUs/>} />
-      
+      <Route path="/VideoPlayer" element={<VideoPlayer/>} />
+      <Route path="/PastStaffNew" element={<PastStaffNew />} />
+      <Route path="/PresentStaffNew" element={<PresentStaffNew/>} />
+
+      /* Admin section */
+      <Route path="/HomeAdmin" element={<HomeAdmin/>} />
+      <Route path="/GESAdmin" element={<GESAdmin/>} />
+      <Route path="/PastStaffCRUD" element={<PastStaffCRUD/>} />
+      <Route path="/PresentStaffCRUD" element={<PresentStaffCRUD/>}/>
+      <Route path="/PresentStaffEdit/:id" element={<PresentStaffEdit/>}/>
+      <Route path="/PresentStaffAdd" element={<PresentStaffAdd/>}/>
+      <Route path="/PastStaffEdit/:id" element={<PastStaffEdit/>}/>
+      <Route path="/PastStaffAdd" element={<PastStaffAdd/>}/>
+
+      /* Login Register Logout */
+      <Route path='/LandingPage' element={<LandingPage/>}/>
+      <Route path='/Login' element={<Login/>}/>
+      <Route path='/RegistrationForm' element={<RegistrationForm/>}/>
+      <Route path='/LogoutButton' element={<LogoutButton/>}/>
+
+
     </Routes>
   );
 };

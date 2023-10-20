@@ -7,6 +7,8 @@ body {
   background-repeat: repeat;
   font-family: 'Inter', sans-serif;
   display: grid;
+  /*New one*/
+  width: 100% !important;
 }
 .container {
     /*background-color: #07a8ff;*/

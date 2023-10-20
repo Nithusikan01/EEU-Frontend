@@ -1,5 +1,8 @@
 import React from 'react';
-import lectureRoomsImage from './../../img/Seminarroom1_1.JPG';
+import lectureRoomsImage1 from './../../img/Lectureroom_12_1.JPG';
+import lectureRoomsImage2 from './../../img/Lectureroom_12_2.JPG';
+import lectureRoomsImage3 from './../../img/Lectureroom_21_1.JPG';
+import lectureRoomsImage4 from './../../img/Lectureroom_21_2.JPG';
 
 const LectureRooms = () => {
 
@@ -40,7 +43,7 @@ const LectureRooms = () => {
       <h2 style={{ ...headingStyle, textAlign: 'center' }}>Lecture Rooms</h2>
       <div style={imageContainerStyle}>
         {/* Add the image below the heading */}
-        <img src={lectureRoomsImage} alt="Lecture Rooms" style={imageStyle} />
+        <img src={lectureRoomsImage1} alt="Lecture Rooms" style={imageStyle} />
       </div>
       <h3 style={headingStyle}>Facilities</h3>
       <ul>
@@ -55,12 +58,12 @@ const LectureRooms = () => {
         <li>Lecture Room 19 was refurbished by Engineering Design Center in 2017</li>
       </ul>
       <div style={rowStyle}>
-            <img src={lectureRoomsImage} alt="Image 1" style={imageStyle} />
-            <img src={lectureRoomsImage} alt="Image 2" style={imageStyle} />
+            <img src={lectureRoomsImage1} alt="Image 1" style={imageStyle} />
+            <img src={lectureRoomsImage2} alt="Image 2" style={imageStyle} />
         </div>
         <div style={rowStyle}>
-            <img src={lectureRoomsImage} alt="Image 3" style={imageStyle} />
-            <img src={lectureRoomsImage} alt="Image 4" style={imageStyle} />
+            <img src={lectureRoomsImage3} alt="Image 3" style={imageStyle} />
+            <img src={lectureRoomsImage4} alt="Image 4" style={imageStyle} />
         </div>
       
     </div>

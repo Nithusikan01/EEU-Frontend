@@ -81,7 +81,7 @@
     }
   
     .title {
-      flex: 1; /* Take full width on smaller screens */
+      flex: 0; /* Take full width on smaller screens */
       padding: 1rem; /* Add some spacing to separate it from AppBar */
       font-size: 100px;
     }

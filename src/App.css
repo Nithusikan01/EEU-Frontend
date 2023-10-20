@@ -1,38 +1,85 @@
-/* Add this CSS to your App.css or a separate stylesheet */
 
-/* Make the Appbar and Navbarmenu fixed at the top */
-.Appbar {
-    position: fixed;
+/*.Appbar {
+   position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1; /* Ensure the Appbar is above other content */
+    z-index: 1; 
   }
   
   .Navbarmenu {
     position: fixed;
-    top: 90px; /* Adjust this value to leave space for the Appbar */
+    top: 90px; 
     left: 0;
     right: 0;
-    z-index: 1; /* Ensure the Navbarmenu is above other content */
+    z-index: 1; 
+  }*/
+  .page{
+    padding-top: 100px;
   }
   
-  /* Set padding for the content below the fixed elements */
-  main {
-    padding-top: 160px; /* Adjust this value to leave space for both fixed elements */
-  }
-  /* Automatically align Navbarmenu with the bottom of Appbar */
-
-  /* Media query for mobile devices */
+  /*main {
+    padding-top: 160px;
+  }*/
+  
 @media (max-width: 576px) {
   .Appbar,
   .Navbarmenu {
-    /*position: static; /* Change position to static for mobile view */
-    /*top: 70px;*/
-    padding: 0; /* Remove padding */
+    
+    padding: 0; 
   }
 
   main {
-    padding-top: 140px; /* Remove padding for mobile view */
+    padding-top: 140px;
   }
 }
+/* Add this CSS to your App.css or a separate stylesheet */
+
+/* Initial styles for the Appbar and Navbarmenu */
+/*.Appbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: top 0.3s;
+  background-color: #333; 
+  color: #fff; 
+}
+
+.Navbarmenu {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: top 0.3s;
+  background-color: #333; 
+  color: #fff; 
+}
+
+
+.Appbar.visible,
+.Navbarmenu.visible {
+  top: -100px; 
+}
+
+
+main {
+  padding-top: 0;
+}
+
+
+@media (max-width: 576px) {
+  .Appbar,
+  .Navbarmenu {
+    padding: 0; 
+  }
+
+  main {
+    padding-top: 140px; 
+  }
+}*/
+
+
+

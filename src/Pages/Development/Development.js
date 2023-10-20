@@ -59,6 +59,7 @@ export default Development;*/
 
 import React from 'react';
 
+
 function Development() {
   const activities = [
     "2018 Improving the web to provide educational resources to students",

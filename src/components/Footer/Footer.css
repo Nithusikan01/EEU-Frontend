@@ -120,7 +120,7 @@ hr{
     padding-left: 0; 
 }*/
 
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 .footer {
     background-color: /*#2d2d32*/#4485a1;
     padding: 2em;

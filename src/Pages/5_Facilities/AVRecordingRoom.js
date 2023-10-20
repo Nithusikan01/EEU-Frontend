@@ -1,8 +1,8 @@
 import React from 'react';
 import seminarRoom1Image from './../../img/Seminarroom2_1.JPG';
-import pic1 from "./../../img/AVSTUDIO_1.jpg"
-import pic2 from "./../../img/AVSTUDIO_2.jpg"
-import pic3 from "./../../img/AVSTUDIO_3.jpg"
+import pic1 from "./../../img/AVSTUDIO_1.JPG"
+import pic2 from "./../../img/AVSTUDIO_2.JPG"
+import pic3 from "./../../img/AVSTUDIO_3.JPG"
 
 const AVRecordingRoom = () => {
 
@@ -40,7 +40,7 @@ const AVRecordingRoom = () => {
 
   return (
     <div style = {cardStyle}>
-      <h2 style={{ ...headingStyle, textAlign: 'center' }}>A/V Recording</h2>
+      <h2 style={{ ...headingStyle, textAlign: 'center' }}>A/V Studio</h2>
       <div style={imageContainerStyle}>
         
         <img src={pic3} alt="A/V Recording" style={imageStyle} />
@@ -75,6 +75,7 @@ const AVRecordingRoom = () => {
             <img src={pic1} alt="Image 1" style={imageStyle} />
             <img src={pic2} alt="Image 2" style={imageStyle} />
         </div>
+        
         
     </div>
   );

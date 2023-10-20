@@ -65,6 +65,7 @@ const GES = () => {
         <br></br>
         Some Departments offers courses contributing to components satisfied by General Electives subjects. Some Departments make some GE subjects compulsory for their students and some GE subjects are not allowed to take. Therefore please follow the guidelines of each department, in addition to the guidelines in the Faculty Hand Book.
       </p>
+      <br></br>
       <div className = "Section2" >
         <table className = "Table">
           <thead>

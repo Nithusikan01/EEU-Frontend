@@ -31,7 +31,7 @@ const Footer = () => {
                         <p><b><u>Mail</u></b></p>
                         <ul>
                             <li>direeu@eng.pdn.ac.lk</li>
-                            <li>kamalanath@eng.pdn.ac.lk</li>
+                            <li>isurunawinne@eng.pdn.ac.lk</li>
                         </ul>
                 
                 </div>
@@ -60,10 +60,10 @@ const Footer = () => {
             <div className = "sb__footer-below">
                 <div className = "sb__footer-copyright">
                     <p>
-                        @{new Date().getFullYear()} CodeInn. All right reserved.
+                        @{new Date().getFullYear()} Engineering Education Unit, Faculty of Engineering, University of Peradeniya. All right reserved.
                     </p>
                 </div>
-                <div className = "sb__footer-below-links">
+                {/*<div className = "sb__footer-below-links">
                     <a href="/terms">
                         <div>
                             <p>
@@ -93,7 +93,7 @@ const Footer = () => {
                         </div>
                     </a>
 
-                </div>
+  </div>*/}
             </div>
         </div>
     </div>

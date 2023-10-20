@@ -72,18 +72,18 @@ const Teal2 = () => {
                     <iframe src="https://www.youtube.com/embed/f5Wk0tz_L10?si=MfUuovpSY1D3m9al" title="YouTube video" allowFullScreen></iframe>
                 </div>
             </div>
-            <li>Seminar #7 - 24 February 2022  - <b>MARKIT - A simple tool to support marking softcopies of answer scripts</b></li>
+            <li>Seminar #7 - 31 March 2022  - <b>Automated Marking of paper based MCQs</b></li>
             <ul>
-                <li>Dr. Suboda Gunawardena, Senior Lecturer and Eng. Thilinda Edirisooriya, Department of Electrical and Information Engineering, University of Ruhuna</li>
+                <li>Dr. Isuru Nawinne, Senior Lecturer, Department of Computer Engineering, University of Peradeniya</li>
             </ul>
             <div className = "hello">
                 <div className="ratio ratio-16x9">
                     <iframe src="https://www.youtube.com/embed/J6ba1WAP8-o?si=qgYiVAesnWtlNkml" title="YouTube video" allowFullScreen></iframe>
                 </div>
             </div>
-            <li>Seminar #8 - 24 February 2022  - <b>MARKIT - A simple tool to support marking softcopies of answer scripts</b></li>
+            <li>Seminar #8 - 02 February 2023  - <b>TEAL2.O Software Platform</b></li>
             <ul>
-                <li>Dr. Suboda Gunawardena, Senior Lecturer and Eng. Thilinda Edirisooriya, Department of Electrical and Information Engineering, University of Ruhuna</li>
+                <li>Dr. Sanjeeva Maithripala, Senior Lecturer, Mechanical Engineering, University of Peradeniya</li>
             </ul>
             <div className = "hello">
                 <div className="ratio ratio-16x9">
